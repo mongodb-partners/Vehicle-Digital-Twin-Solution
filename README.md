@@ -39,7 +39,7 @@ Select container image and add the ECR URI of your image as below
 <img width="1728" alt="Lambda#2_1" src="https://user-images.githubusercontent.com/114057324/199460640-8e5ad4c9-e89b-4c85-9824-dafd11ddbf5b.png">
 
 ## Create Rules for AWS Eventbus
-
+### 1. Eventbus for capturing MongoDB changes
 ![image](https://user-images.githubusercontent.com/114057324/199439272-e4cfa58b-aebb-4bdc-af69-246ef44b80fa.png)
 ![image](https://user-images.githubusercontent.com/114057324/199439653-511f20ec-020d-4aad-ac1e-d253d04aa56c.png)
 ![image](https://user-images.githubusercontent.com/114057324/199439699-d740bfde-7f25-41ad-b9df-a3667abf4cba.png)
@@ -48,7 +48,10 @@ Add previously created Lambda as target and create the rule
 
 ![image](https://user-images.githubusercontent.com/114057324/199439940-f122ef69-b105-40ed-a255-d89e05b91133.png)
 
-TODO:
- - 
+### 2. Eventbus for capturing events sent from Lambda function  
+<img width="1728" alt="Eventbridge#2_Rule2" src="https://user-images.githubusercontent.com/114057324/199469002-8ea8e13c-92ac-47a3-bbab-993636017398.png">
+<img width="1728" alt="Eventbridge#2_Rule3" src="https://user-images.githubusercontent.com/114057324/199469030-d9aedc95-d8a1-4cb7-b943-6c4de3954300.png">
+<img width="1728" alt="Eventbridge#2_Rule4" src="https://user-images.githubusercontent.com/114057324/199469056-2bdc38d7-fddb-4f39-8c0d-fd791694e42b.png">
+
 
 <standard>
