@@ -3,10 +3,15 @@ MongoDB and AWS integration for connected vehicles
 
 
 # Intro
+A connected vehicle platform opens a window of analytical data that manufacturers can use to provide recommendations for safer, more efficient and improved driving experiences. Personalized driving experiences are made possible through bidirectional information exchange between applications in the car, mobile, webapps and machine learning interfaces in the cloud. 
+
+However, creating such a cutting edge connected vehicle platform requires the best-in-class foundation. With MongoDB Atlas and the AWS ecosystem, you are provided with such building blocks. MongoDB is your end-to-end data layer for efficient bidirectional data exchange, ensuring consistency on a mobile device, vehicle, and the cloud. AWS, including SageMaker and its integration capabilities, is your public cloud infrastructure allowing you to gain value out of your data and produce the right recommendations for enhanced driving experiences. 
+
+With these tools in mind, let’s begin creating a cutting edge connected vehicle platform! 
 
 
 # Architecture
-
+![image](https://user-images.githubusercontent.com/114057324/199659004-49177737-3e80-4656-9a5b-e219dbedc296.png)
 
 # Step-by-step instructions
 
@@ -31,11 +36,12 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 ## Lambda Functions
 Create two lambda functions:
 
-1. For Pulling the data from MongoDB cluster
+1. For pulling the data from MongoDB cluster
+
 Select container image and add the ECR URI of your image as below
 <img width="1728" alt="Lambda_3" src="https://user-images.githubusercontent.com/114057324/199440133-89626fb6-48ae-4122-8322-0ae19a848161.png">
 
-2. For Pushing the predicted data to MongoDB cluster
+2. For pushing the predicted data back to MongoDB cluster
 <img width="1728" alt="Lambda#2_1" src="https://user-images.githubusercontent.com/114057324/199460640-8e5ad4c9-e89b-4c85-9824-dafd11ddbf5b.png">
 
 ## Create Rules for AWS Eventbus
