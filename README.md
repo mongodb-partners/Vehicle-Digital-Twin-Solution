@@ -21,7 +21,7 @@ Deploy sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the en
 ![image](https://user-images.githubusercontent.com/114057324/199463222-dcacd80d-1e84-494a-99a7-ba2a5a0f7914.png)
 
 ## Building the Code
-Replace the sagemaker end-point with the one generated above in python function 
+Replace the sagemaker end-point with the one generated above [here](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/aea66805a27d2367d405c45b17951442485bd6b7/code/push_to_mdb/write_to_mdb.py#L13)
 
 ## Setup Eventbridge triggers form MongoDB Atlas
 
