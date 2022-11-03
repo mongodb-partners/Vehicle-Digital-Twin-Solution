@@ -54,4 +54,7 @@ Add previously created Lambda as target and create the rule
 <img width="1728" alt="Eventbridge#2_Rule4" src="https://user-images.githubusercontent.com/114057324/199469056-2bdc38d7-fddb-4f39-8c0d-fd791694e42b.png">
 
 
+# Conclusion
+For any further information, please contact partners@mongodb.com
+
 <standard>
