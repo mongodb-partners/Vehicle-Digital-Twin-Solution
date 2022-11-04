@@ -8,11 +8,11 @@ def handler(event, context):
 
         # Setup the variables for MongoDB Atlas Connection
         values = {
-            "mongo-endpoint": "mongodb+srv://main_user:test123@partnersagemaker.fmxyq.mongodb.net/?retryWrites=true&w=majority",
-            "region-name": "us-east-1",
-            "model-endpoint": "sagemaker-soln-fpm-js-zhao2m-demo-endpoint",
-            "db": "AWS",
-            "col": "IoT"
+            "mongo-endpoint": "mongodb+srv://XXXX:XXXX@XXXX/?retryWrites=true&w=majority", # Update with your MongoDB connection string
+            "region-name": "XXXX",  # Update your region
+            "model-endpoint": "sagemaker-soln-XXXX",  # Update your sagemaker model endpoint
+            "db": "XXXX", # Update your database name
+            "col": "XXXX" # Update your collection name
         }
         
         ENDPOINT_NAME= values['model-endpoint'] 
