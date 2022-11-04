@@ -22,7 +22,7 @@ Configure the database for [network security](https://www.mongodb.com/docs/atlas
 
 ##  Vehichle Setup
 
-Connected Vehichle simmulation can be setup using the below link, this enables to simmulate battery voltage and current for a given Vehichle Identification Number (VIN)
+Connected Vehichle simulation can be setup using the below link, this enables to simulate battery voltage and current for a given Vehichle Identification Number (VIN)
 
 https://github.com/mongodb-industry-solutions/Connected-Devices/blob/aws-connected-vehicle/README.md
 
