@@ -58,6 +58,8 @@ Add previously created Lambda as target and create the rule
 
 
 # Conclusion
+This gives a working demo on how to setup MongoDB Atlas to EventBridge. And taking the inference from Sagemaker to MongoDB Atlas. 
+
 For any further information, please contact partners@mongodb.com
 
 <standard>
