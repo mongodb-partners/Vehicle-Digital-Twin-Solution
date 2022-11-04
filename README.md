@@ -37,12 +37,9 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 Create two lambda functions:
 
 1. For pulling the data from MongoDB cluster
-
-Select container image and add the ECR URI of your image as below
-<img width="1728" alt="Lambda_3" src="https://user-images.githubusercontent.com/114057324/199440133-89626fb6-48ae-4122-8322-0ae19a848161.png">
-
 2. For pushing the predicted data back to MongoDB cluster
-<img width="1728" alt="Lambda#2_1" src="https://user-images.githubusercontent.com/114057324/199460640-8e5ad4c9-e89b-4c85-9824-dafd11ddbf5b.png">
+
+Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html)
 
 ## Create Rules for AWS Eventbus
 ### 1. Eventbus for capturing MongoDB changes
