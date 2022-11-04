@@ -15,8 +15,21 @@ With these tools in mind, let’s begin creating a cutting edge connected vehicl
 
 # Step-by-step instructions
 
+## Create a MongoDB Atlas cluster
+Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) to setup a free cluster in MongoDB Atlas
+
+Configure the database for [network security](https://www.mongodb.com/docs/atlas/security/add-ip-address-to-list/) and [access](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/).
+
 ##  Vehichle Setup
+
+Connected Vehichle simmulation can be setup using the below link, this enables to simmulate battery voltage and current for a given Vehichle Identification Number (VIN)
+
 https://github.com/mongodb-industry-solutions/Connected-Devices/blob/aws-connected-vehicle/README.md
+
+## Setup Eventbridge triggers form MongoDB Atlas
+
+Follow the below link to set AWS Event triggers 
+https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Setup SageMaker 
 
@@ -27,11 +40,6 @@ Deploy sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the en
 
 ## Building the Code
 Replace the sagemaker end-point with the one generated above [here](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/aea66805a27d2367d405c45b17951442485bd6b7/code/push_to_mdb/write_to_mdb.py#L13)
-
-## Setup Eventbridge triggers form MongoDB Atlas
-
-Follow the below link to set AWS Event triggers 
-https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Lambda Functions
 Create two lambda functions:
@@ -56,9 +64,14 @@ Add previously created Lambda as target and create the rule
 <img width="1728" alt="Eventbridge#2_Rule3" src="https://user-images.githubusercontent.com/114057324/199469030-d9aedc95-d8a1-4cb7-b943-6c4de3954300.png">
 <img width="1728" alt="Eventbridge#2_Rule4" src="https://user-images.githubusercontent.com/114057324/199469056-2bdc38d7-fddb-4f39-8c0d-fd791694e42b.png">
 
+## Sample output
+On simulating the connected vehichle application the volatage and current of the vehichle are analysed for percentage of failure. The inferences like status and percentage are stored back in MongoDB Atlas.
+
+![image](https://user-images.githubusercontent.com/114057324/199904767-1fb432dc-af21-44aa-a236-31d84ad031f2.png)
+
 
 # Conclusion
-This gives a working demo on how to setup MongoDB Atlas to EventBridge. And taking the inference from Sagemaker to MongoDB Atlas. 
+This gives a working template to setup an end-to-end flow for connected vehichles to analyse it's telemetric data using MongoDB Atlas and AWS Services. 
 
 For any further information, please contact partners@mongodb.com
 
