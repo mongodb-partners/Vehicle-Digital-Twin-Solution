@@ -1,5 +1,5 @@
 # Vehicle-Digital-Twin-Solution
-MongoDB and AWS integration for connected vehicles
+MongoDB and AWS integration for connected vehicles.
 
 
 # Intro
@@ -33,7 +33,7 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Setup SageMaker 
 
-Deploy sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point
+Deploy sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
 
 ![image](https://user-images.githubusercontent.com/114057324/199462770-84305e10-2a3b-4f10-9f56-7a8cd61e8ee3.png)
 ![image](https://user-images.githubusercontent.com/114057324/199463222-dcacd80d-1e84-494a-99a7-ba2a5a0f7914.png)
@@ -44,10 +44,10 @@ Replace the sagemaker end-point with the one generated above [here](https://gith
 ## Lambda Functions
 Create two lambda functions:
 
-1. For pulling the data from MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/pull_from_mdb/app.py) 
-2. For pushing the predicted data back to MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py) 
+1. For pulling the data from MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/pull_from_mdb).
+2. For pushing the predicted data back to MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb).
 
-Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html)
+Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html).
 
 ## Create Rules for AWS Eventbus
 ### 1. Eventbus for capturing MongoDB changes
