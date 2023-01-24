@@ -16,19 +16,19 @@ With these tools in mind, let’s begin creating a cutting edge connected vehicl
 # Step-by-step instructions
 
 ## Create a MongoDB Atlas cluster
-Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) to setup a free cluster in MongoDB Atlas
+Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) to setup a free cluster in MongoDB Atlas.
 
 Configure the database for [network security](https://www.mongodb.com/docs/atlas/security/add-ip-address-to-list/) and [access](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/).
 
 ##  Vehichle Setup
 
-Connected Vehichle simulation can be setup using the below link, this enables to simulate battery voltage and current for a given Vehichle Identification Number (VIN)
+Connected Vehichle simulation can be setup using the below link, this enables to simulate battery voltage and current for a given Vehichle Identification Number (VIN).
 
 https://github.com/mongodb-industry-solutions/Connected-Devices/blob/aws-connected-vehicle/README.md
 
 ## Setup Eventbridge triggers form MongoDB Atlas
 
-Follow the below link to set AWS Event triggers 
+Follow the below link to set AWS Event triggers:
 https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Setup SageMaker 
@@ -44,39 +44,39 @@ Replace the sagemaker end-point with the one generated above [here](https://gith
 ## Lambda Functions
 Create two lambda functions:
 
-1. For pulling the data from MongoDB cluster. Refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/pull_from_mdb/app.py) 
-2. For pushing the predicted data back to MongoDB cluster. Refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py) 
+1. For pulling the data from MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/pull_from_mdb/app.py) 
+2. For pushing the predicted data back to MongoDB cluster, refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py) 
 
 Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html)
 
 ## Create Rules for AWS Eventbus
 ### 1. Eventbus for capturing MongoDB changes
 
-Add the rule name, description and the eventbus from the dropdown
+Add the rule name, description and the eventbus from the dropdown.
 
 ![image](https://user-images.githubusercontent.com/114057324/199439272-e4cfa58b-aebb-4bdc-af69-246ef44b80fa.png)
 
-Select the first option for Event source to pull data from MongoDB
+Select the first option for Event source to pull data from MongoDB.
 
 ![image](https://user-images.githubusercontent.com/114057324/199439653-511f20ec-020d-4aad-ac1e-d253d04aa56c.png)
 
-Select options for Even source, Partner and type as selected below. 
+Select options for Event source, Partner and type as selected below. 
 
 ![image](https://user-images.githubusercontent.com/114057324/199439699-d740bfde-7f25-41ad-b9df-a3667abf4cba.png)
 
-Add previously created Lambda as target and create the rule
+Add previously created Lambda as target and create the rule.
 
 ![image](https://user-images.githubusercontent.com/114057324/199439940-f122ef69-b105-40ed-a255-d89e05b91133.png)
 
 ### 2. Eventbus for capturing events sent from Lambda function  
 
-This rule is created to move data between lambda functions 
+This rule is created to move data between lambda functions.
 ![image](https://user-images.githubusercontent.com/114057324/214270431-89650ccf-63d1-43a5-916f-88fa3f97f147.png)
 
-Select other when selecting event source
+Select other when selecting event source.
 ![image](https://user-images.githubusercontent.com/114057324/214270442-c722e775-082f-4f60-862a-bef7d5bcebac.png)
 
-Add below event pattern to be able to send data using python function
+Add below event pattern to be able to send data using python function.
 ```
 {
     "source": ["user-event"],
@@ -86,13 +86,13 @@ Add below event pattern to be able to send data using python function
 ![image](https://user-images.githubusercontent.com/114057324/214270448-4651a768-4c43-4cb6-95cb-6b0044c517ee.png)
 
 ## Sample output
-On simulating the connected vehichle application the volatage and current of the vehichle are analysed for percentage of failure. The inferences like status and percentage are stored back in MongoDB Atlas.
+On simulating the connected vehichle application the volatage and current of the vehichle are analysed for percentage of failure. The inference is stored back in MongoDB Atlas.
 
 ![image](https://user-images.githubusercontent.com/114057324/199904767-1fb432dc-af21-44aa-a236-31d84ad031f2.png)
 
 
 # Conclusion
-This gives a working template to setup an end-to-end flow for connected vehichles to analyse it's telemetric data using MongoDB Atlas and AWS Services. 
+This gives a working template to setup an end-to-end flow for connected vehicles, to analyse its telemetric data using MongoDB Atlas and AWS Services. 
 
 For any further information, please contact partners@mongodb.com
 
