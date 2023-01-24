@@ -51,8 +51,17 @@ Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-c
 
 ## Create Rules for AWS Eventbus
 ### 1. Eventbus for capturing MongoDB changes
+
+Add the rule name, description and the eventbus from the dropdown
+
 ![image](https://user-images.githubusercontent.com/114057324/199439272-e4cfa58b-aebb-4bdc-af69-246ef44b80fa.png)
+
+Select the first option for Event source to pull data from MongoDB
+
 ![image](https://user-images.githubusercontent.com/114057324/199439653-511f20ec-020d-4aad-ac1e-d253d04aa56c.png)
+
+Select options for Even source, Partner and type as selected below. 
+
 ![image](https://user-images.githubusercontent.com/114057324/199439699-d740bfde-7f25-41ad-b9df-a3667abf4cba.png)
 
 Add previously created Lambda as target and create the rule
@@ -60,9 +69,21 @@ Add previously created Lambda as target and create the rule
 ![image](https://user-images.githubusercontent.com/114057324/199439940-f122ef69-b105-40ed-a255-d89e05b91133.png)
 
 ### 2. Eventbus for capturing events sent from Lambda function  
-<img width="1181" alt="2 Eventhub" src="https://user-images.githubusercontent.com/114057324/214270431-89650ccf-63d1-43a5-916f-88fa3f97f147.png">
-<img width="1135" alt="2 Eventhub2" src="https://user-images.githubusercontent.com/114057324/214270442-c722e775-082f-4f60-862a-bef7d5bcebac.png">
-<img width="941" alt="2 Eventhub3" src="https://user-images.githubusercontent.com/114057324/214270448-4651a768-4c43-4cb6-95cb-6b0044c517ee.png">
+
+This rule is created to move data between lambda functions 
+![image](https://user-images.githubusercontent.com/114057324/214270431-89650ccf-63d1-43a5-916f-88fa3f97f147.png)
+
+Select other when selecting event source
+![image](https://user-images.githubusercontent.com/114057324/214270442-c722e775-082f-4f60-862a-bef7d5bcebac.png)
+
+Add below event pattern to be able to send data using python function
+```
+{
+    "source": ["user-event"],
+    "detail-type": ["user-preferences"]
+}
+```
+![image](https://user-images.githubusercontent.com/114057324/214270448-4651a768-4c43-4cb6-95cb-6b0044c517ee.png)
 
 ## Sample output
 On simulating the connected vehichle application the volatage and current of the vehichle are analysed for percentage of failure. The inferences like status and percentage are stored back in MongoDB Atlas.
