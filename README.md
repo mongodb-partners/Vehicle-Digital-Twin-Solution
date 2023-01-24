@@ -44,8 +44,8 @@ Replace the sagemaker end-point with the one generated above [here](https://gith
 ## Lambda Functions
 Create two lambda functions:
 
-1. For pulling the data from MongoDB cluster
-2. For pushing the predicted data back to MongoDB cluster
+1. For pulling the data from MongoDB cluster. Refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/pull_from_mdb/app.py) 
+2. For pushing the predicted data back to MongoDB cluster. Refer this [function](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py) 
 
 Please follow this [guide](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html)
 
