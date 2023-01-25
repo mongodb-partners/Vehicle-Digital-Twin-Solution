@@ -1,4 +1,4 @@
-# Setup Instructions for MongoDB and AWS Sagemaker Integration for Digital Twins 
+# Setup Instructions for MongoDB and AWS Sagemaker Integration
 
 To configure the first 3 parts of your Digital Twin, please refer to the [Digital-Twins-With-AWS repository](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS). 
 
