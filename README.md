@@ -1,30 +1,14 @@
-# Vehicle-Digital-Twin-Solution
-MongoDB and AWS integration for connected vehicles.
+# Setup Instructions for MongoDB and AWS Sagemaker Integration for Digital Twins 
 
+To configure the first 3 parts of your Digital Twin, please refer to the [Digital-Twins-With-AWS repository](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS). 
 
-# Intro
-A connected vehicle platform opens a window of analytical data that manufacturers can use to provide recommendations for safer, more efficient and improved driving experiences. Personalized driving experiences are made possible through bidirectional information exchange between applications in the car, mobile, webapps and machine learning interfaces in the cloud. 
-
-However, creating such a cutting edge connected vehicle platform requires the best-in-class foundation. With MongoDB Atlas and the AWS ecosystem, you are provided with such building blocks. MongoDB is your end-to-end data layer for efficient bidirectional data exchange, ensuring consistency on a mobile device, vehicle, and the cloud. AWS, including SageMaker and its integration capabilities, is your public cloud infrastructure allowing you to gain value out of your data and produce the right recommendations for enhanced driving experiences. 
-
-With these tools in mind, let’s begin creating a cutting edge connected vehicle platform! 
-
-
-# Architecture
-![image](https://user-images.githubusercontent.com/114057324/199659004-49177737-3e80-4656-9a5b-e219dbedc296.png)
 
 # Step-by-step instructions
 
-## Create a MongoDB Atlas cluster
-Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) to setup a free cluster in MongoDB Atlas.
-
-Configure the database for [network security](https://www.mongodb.com/docs/atlas/security/add-ip-address-to-list/) and [access](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/).
-
-##  Vehicle Setup
-
-A Connected Vehichle simulation can be setup using the below link, this enables you to simulate battery voltage and current for a given Vehichle Identification Number (VIN).
-
-https://github.com/mongodb-industry-solutions/Connected-Devices/blob/aws-connected-vehicle/README.md
+## Setup the AWS Backend
+1. Create an [AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email).
+2. Take note of your AWS Account ID as you'll need it to set up your Digital Twin Application.
+3. Update your AWS Account ID in `./Connected-Products/triggers/eventbridge_publish_battery_telemetry.json`
 
 ## Setup Eventbridge triggers form MongoDB Atlas
 
