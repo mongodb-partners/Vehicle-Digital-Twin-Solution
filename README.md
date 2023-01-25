@@ -22,7 +22,7 @@ Configure the database for [network security](https://www.mongodb.com/docs/atlas
 
 ##  Vehichle Setup
 
-Connected Vehichle simulation can be setup using the below link, this enables to simulate battery voltage and current for a given Vehichle Identification Number (VIN).
+A Connected Vehichle simulation can be setup using the below link, this enables you to simulate battery voltage and current for a given Vehichle Identification Number (VIN).
 
 https://github.com/mongodb-industry-solutions/Connected-Devices/blob/aws-connected-vehicle/README.md
 
@@ -33,7 +33,7 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Setup SageMaker 
 
-Deploy sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
+Deploy the sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
 
 ![image](https://user-images.githubusercontent.com/114057324/199462770-84305e10-2a3b-4f10-9f56-7a8cd61e8ee3.png)
 ![image](https://user-images.githubusercontent.com/114057324/199463222-dcacd80d-1e84-494a-99a7-ba2a5a0f7914.png)
@@ -60,7 +60,7 @@ Select the first option for Event source to pull data from MongoDB.
 
 ![image](https://user-images.githubusercontent.com/114057324/199439653-511f20ec-020d-4aad-ac1e-d253d04aa56c.png)
 
-Select options for Event source, Partner and type as selected below. 
+Select options for Event source, Partner and Event type as selected below. 
 
 ![image](https://user-images.githubusercontent.com/114057324/199439699-d740bfde-7f25-41ad-b9df-a3667abf4cba.png)
 
