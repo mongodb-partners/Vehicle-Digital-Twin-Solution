@@ -20,7 +20,7 @@ Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free
 
 Configure the database for [network security](https://www.mongodb.com/docs/atlas/security/add-ip-address-to-list/) and [access](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/).
 
-##  Vehichle Setup
+##  Vehicle Setup
 
 A Connected Vehichle simulation can be setup using the below link, this enables you to simulate battery voltage and current for a given Vehichle Identification Number (VIN).
 
