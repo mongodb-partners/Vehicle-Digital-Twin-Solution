@@ -11,6 +11,8 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
 3. Update your AWS Account ID in `./Connected-Products/triggers/analyze_battery_telemetry.json`
 4. To publish battery telemetry information to Eventbridge, please follow these steps in MongoDB Atlas under the App Services tab: 
        
+      * Navigate to the "Triggers" tab
+       
       * Change the function in your analyze_battery_telemetry trigger: 
 
        [screenshot here of change from function execution to eventbridge publishing]
