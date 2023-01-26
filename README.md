@@ -21,7 +21,7 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
               
            * Select an AWS Region 
 
-       [screenshot here of change from function execution to eventbridge publishing]
+      ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/function.png)
        
       * Now expand the advanced options and copy/paste the following code into the Project Expression: 
       
@@ -44,8 +44,9 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
               }
       ```
        
-       
-      [screenshot here of expand the advanced options] 
+      * You should see the following: 
+     ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/project_expression.png)
+
        
        
 
