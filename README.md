@@ -13,7 +13,9 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
        
       * Navigate to the "Triggers" tab
        
-      * Click on your analyze_battery_telemetry trigger
+      * Click on your analyze_battery_telemetry trigger: 
+      
+      ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/trigger.png)
       
       * Under the "Function" Section select "EventBridge" as the Event Type
       
@@ -21,7 +23,7 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
               
            * Select an AWS Region 
 
-      ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/function.png)
+     ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/function.png)
        
       * Now expand the advanced options and copy/paste the following code into the Project Expression: 
       
