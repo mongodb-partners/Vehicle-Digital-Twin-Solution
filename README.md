@@ -15,7 +15,7 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
 
        [screenshot here of change from function execution to eventbridge publishing]
        
-      * Expand the advanced options and copy/paste the following code: 
+      * Expand the advanced options and copy/paste the following code into the Project Expression: 
       
       ```json 
                {
