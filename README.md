@@ -13,7 +13,9 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
        
       * Navigate to the "Triggers" tab
        
-      * Change the function in your analyze_battery_telemetry trigger: 
+      * Click on your analyze_battery_telemetry trigger
+      
+      * Under the "Function" Section select "EventBridge" as the Event Type
 
        [screenshot here of change from function execution to eventbridge publishing]
        
