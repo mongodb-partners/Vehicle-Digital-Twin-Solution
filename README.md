@@ -1,4 +1,4 @@
-# Setup Instructions for MongoDB and AWS Sagemaker Integration
+# Setup Instructions for MongoDB and AWS SageMaker Integration
 
 To configure the first 3 parts of your Digital Twin, please refer to the [Digital-Twins-With-AWS repository](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS). 
 
@@ -17,13 +17,13 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
 
 ## Setup SageMaker 
 
-Deploy the sagemaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
+Deploy the SageMaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
 
 ![image](https://user-images.githubusercontent.com/114057324/199462770-84305e10-2a3b-4f10-9f56-7a8cd61e8ee3.png)
 ![image](https://user-images.githubusercontent.com/114057324/199463222-dcacd80d-1e84-494a-99a7-ba2a5a0f7914.png)
 
 ## Building the Code
-Replace the sagemaker end-point with the one generated above [here](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py#L13).
+Replace the SageMaker end-point with the one generated above [here](https://github.com/mongodb-partners/Vehicle-Digital-Twin-Solution/blob/main/code/push_to_mdb/write_to_mdb.py#L13).
 
 ## Lambda Functions
 Create two lambda functions:
