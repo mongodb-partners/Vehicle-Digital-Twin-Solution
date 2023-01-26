@@ -8,7 +8,12 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
 ## Setup the AWS Backend
 1. Create an [AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email).
 2. Take note of your AWS Account ID as you'll need it to set up your Digital Twin Application.
-3. Update your AWS Account ID in `./Connected-Products/triggers/eventbridge_publish_battery_telemetry.json`
+3. Change the function in your analyze_battery_telemetry trigger: 
+       
+       "operationType":{"$numberInt":"1"},"vin":"$fullDocument.vin","read":{"$map":{"input":"$fullDocument.measurements","as":
+       "item","in":["$$item.voltage","$$item.current"]}}}
+
+4. Update your AWS Account ID in `./Connected-Products/triggers/eventbridge_publish_battery_telemetry.json`
 
 ## Setup Eventbridge triggers form MongoDB Atlas
 
