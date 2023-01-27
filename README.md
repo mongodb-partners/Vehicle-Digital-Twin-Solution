@@ -7,9 +7,8 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Digita
 
 ## Setup the AWS Backend
 1. Create an [AWS Account](https://portal.aws.amazon.com/billing/signup#/start/email).
-2. Take note of your AWS Account ID as you'll need it to set up your Digital Twin Application.
-3. Update your AWS Account ID in `./Connected-Products/triggers/analyze_battery_telemetry.json`
-4. To publish battery telemetry information to Eventbridge, please follow these steps in MongoDB Atlas under the App Services tab: 
+2. Take note of your AWS Account ID as you'll need it to update your AWS Account ID in `./Connected-Products/triggers/analyze_battery_telemetry.json`
+3. To publish battery telemetry information to Eventbridge, please follow these steps in MongoDB Atlas under the App Services tab: 
        
       * Navigate to the "Triggers" tab
        
