@@ -114,7 +114,7 @@ On simulating the connected vehichle application the volatage and current of the
 # Conclusion
 This gives a working template to setup an end-to-end flow for connected vehicles, to analyze its telemetric data using MongoDB Atlas and AWS Services. 
 
-Return to [Part 4](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/aws-sagemaker/README.md), if you are interested in running the [Digital-Twins-With-AWS demo](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/Demo_Instructions.md)! 
+Return to [Part 4](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/aws-sagemaker/README.md), if you are interested in running the [Vehicle-Digital-Twin-Feedback-Loop](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/Demo_Instructions.md)! 
 
 For any further information, please contact partners@mongodb.com
 
