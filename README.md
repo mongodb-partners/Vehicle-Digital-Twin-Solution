@@ -16,7 +16,7 @@ https://www.mongodb.com/docs/atlas/triggers/eventbridge/
        
       * Click on your eventbridge_publish_battery_telemetry trigger: 
       
-      ![image](https://github.com/mongodb-industry-solutions/Digital-Twins-With-AWS/blob/main/media/trigger.png)
+      ![image](new)
       
       * Under the "Function" Section select "EventBridge" as the Event Type
       
