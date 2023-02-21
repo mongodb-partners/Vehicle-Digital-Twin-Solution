@@ -51,7 +51,7 @@ To configure the first 3 parts of your Digital Twin, please refer to the [Vehicl
 
 ## Setup SageMaker 
 
-If not already completed, please refer to the [link](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html#studio-launch-console-prerequisites) for prerequisites and setup of Sagemaker domain. 
+If not already completed, please refer to the [link](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-launch.html#studio-launch-console-prerequisites) for prerequisites and setup of SageMaker domain. 
 
 Deploy the SageMaker model "Predictive Maintenance for Vehicle Fleets" to get the end-point.
 
